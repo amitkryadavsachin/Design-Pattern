@@ -1,9 +1,8 @@
-package com.lld.design_patterns.behavioral.singleton;
+package com.lld.design_patterns.creational.singleton;
 
 public class Singleton {
-
     private static Singleton instance;
-    // Private constructor to prevent instantiation
+
     private Singleton() {}
 
     public static synchronized Singleton getInstance() {

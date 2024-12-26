@@ -1,4 +1,4 @@
-package com.lld.design_patterns.behavioral.singleton;
+package com.lld.design_patterns.creational.singleton;
 
 import org.springframework.stereotype.Component;
 

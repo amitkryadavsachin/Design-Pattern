@@ -1,4 +1,4 @@
-package com.lld.design_patterns.behavioral.factory;
+package com.lld.design_patterns.creational.factory;
 
 public class Circle implements Shape{
     @Override
