@@ -1,7 +1,7 @@
 package com.lld.design_patterns;
 
-import com.lld.design_patterns.behavioral.factory.FactoryPatternRunner;
-import com.lld.design_patterns.behavioral.singleton.SingletonRunner;
+import com.lld.design_patterns.creational.factory.FactoryPatternRunner;
+import com.lld.design_patterns.creational.singleton.SingletonRunner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

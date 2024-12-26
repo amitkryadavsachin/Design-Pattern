@@ -1,5 +1,8 @@
-package com.lld.design_patterns.behavioral.factory;
+package com.lld.design_patterns.creational.factory;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ShapeFactory {
     public Shape getShape(String shapeType) {
         if (shapeType == null) {
