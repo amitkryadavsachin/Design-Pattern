@@ -97,3 +97,25 @@ The `Singleton` class ensures that only one instance of itself is created, even 
 - **Example Execution**:
   The `SingletonRunner` demonstrates the Singleton pattern in action by verifying that two instances point to the same object.
 
+## **1 Factory Pattern**
+### **What is the Factory Pattern??**
+The Factory Pattern is a creational design pattern that provides an interface for creating objects but allows subclasses to decide which class to instantiate. This pattern helps decouple the client code from the object creation logic.
+
+### **Use Cases**
+When the exact type of the object isn't known until runtime.
+To reduce complexity and dependency in object creation.
+For managing groups of related objects.
+Code Overview
+Interface: Shape
+
+Represents a common type for all shapes.
+Concrete Classes: Circle, Rectangle, Square
+
+Specific implementations of the Shape interface.
+Factory Class: ShapeFactory
+
+Provides a method to create objects based on input parameters.
+Runner Class: FactoryPatternRunner
+
+Demonstrates how the factory simplifies object creation and maintains flexibility.
+
