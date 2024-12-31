@@ -1,5 +1,8 @@
 package com.lld.design_patterns.creational.abstractFactory;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class AbstractFactoryPatternRunner {
 
     public void run() {
