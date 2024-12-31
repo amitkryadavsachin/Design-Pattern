@@ -105,7 +105,7 @@ The Factory Pattern is a creational design pattern that provides an interface fo
 When the exact type of the object isn't known until runtime.
 To reduce complexity and dependency in object creation.
 For managing groups of related objects.
-### **Code Overview
+### **Code Overview**
 Interface: Shape
 
 Represents a common type for all shapes.
@@ -124,7 +124,7 @@ Increases flexibility by decoupling object creation from implementation.
 
 
 ## **3. Abstract Factory Pattern**
-### **What is the Abstract Factory Pattern?
+### **What is the Abstract Factory Pattern?**
 The Abstract Factory Pattern is a creational design pattern that provides an interface for creating families of related or dependent objects without specifying their concrete classes. It is often referred to as a "factory of factories."
 
 ### **Use Cases**
