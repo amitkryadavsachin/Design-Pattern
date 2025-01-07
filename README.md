@@ -183,9 +183,9 @@ Imagine constructing a **Computer** object with various configurations, such as 
 
 ## Code Example
 
-### Creating a Gaming PC
+### Creating a Gaming PC 
 
-```java
+java
 Computer gamingPC = new ComputerBuilder()
     .setCpu("Intel Core i9")
     .setRam("32GB")
