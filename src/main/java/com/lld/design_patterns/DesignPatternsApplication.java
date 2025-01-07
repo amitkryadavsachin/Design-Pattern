@@ -3,6 +3,8 @@ package com.lld.design_patterns;
 import com.lld.design_patterns.creational.abstractFactory.AbstractFactoryPatternRunner;
 import com.lld.design_patterns.creational.builder.BuilderPatternRunner;
 import com.lld.design_patterns.creational.factory.FactoryPatternRunner;
+import com.lld.design_patterns.creational.prototype.PrototypePatternRunner;
+import com.lld.design_patterns.creational.prototype.expensive.PrototypeExpensiveRunner;
 import com.lld.design_patterns.creational.singleton.SingletonRunner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -15,15 +17,21 @@ public class DesignPatternsApplication implements CommandLineRunner {
 	private final FactoryPatternRunner factoryPatternRunner;
 	private final AbstractFactoryPatternRunner abstractFactoryPatternRunner;
 	private final BuilderPatternRunner builderPatternRunner;
+	private final PrototypePatternRunner prototypePatternRunner;
+	private final PrototypeExpensiveRunner prototypeExpensiveRunner;
 
 	public DesignPatternsApplication(SingletonRunner singletonRunner,
 									 FactoryPatternRunner factoryPatternRunner,
 									 AbstractFactoryPatternRunner abstractFactoryPatternRunner,
-									 BuilderPatternRunner builderPatternRunner) {
+									 BuilderPatternRunner builderPatternRunner,
+									 PrototypePatternRunner prototypePatternRunner,
+									 PrototypeExpensiveRunner prototypeExpensiveRunner) {
 		this.singletonRunner = singletonRunner;
 		this.factoryPatternRunner = factoryPatternRunner;
 		this.abstractFactoryPatternRunner = abstractFactoryPatternRunner;
 		this.builderPatternRunner = builderPatternRunner;
+		this.prototypePatternRunner = prototypePatternRunner;
+		this.prototypeExpensiveRunner = prototypeExpensiveRunner;
 	}
 
 	public static void main(String[] args) {
@@ -37,6 +45,8 @@ public class DesignPatternsApplication implements CommandLineRunner {
 		factoryPatternRunner.run();
 		abstractFactoryPatternRunner.run();
 		builderPatternRunner.run();
+		prototypePatternRunner.run();
+		prototypeExpensiveRunner.run();
 	}
 	
 }
