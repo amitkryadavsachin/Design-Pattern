@@ -1,6 +1,7 @@
 package com.lld.design_patterns;
 
 import com.lld.design_patterns.creational.abstractFactory.AbstractFactoryPatternRunner;
+import com.lld.design_patterns.creational.builder.BuilderPatternRunner;
 import com.lld.design_patterns.creational.factory.FactoryPatternRunner;
 import com.lld.design_patterns.creational.singleton.SingletonRunner;
 import org.springframework.boot.CommandLineRunner;
@@ -13,13 +14,16 @@ public class DesignPatternsApplication implements CommandLineRunner {
 	private final SingletonRunner singletonRunner;
 	private final FactoryPatternRunner factoryPatternRunner;
 	private final AbstractFactoryPatternRunner abstractFactoryPatternRunner;
+	private final BuilderPatternRunner builderPatternRunner;
 
 	public DesignPatternsApplication(SingletonRunner singletonRunner,
 									 FactoryPatternRunner factoryPatternRunner,
-									 AbstractFactoryPatternRunner abstractFactoryPatternRunner) {
+									 AbstractFactoryPatternRunner abstractFactoryPatternRunner,
+									 BuilderPatternRunner builderPatternRunner) {
 		this.singletonRunner = singletonRunner;
 		this.factoryPatternRunner = factoryPatternRunner;
 		this.abstractFactoryPatternRunner = abstractFactoryPatternRunner;
+		this.builderPatternRunner = builderPatternRunner;
 	}
 
 	public static void main(String[] args) {
@@ -32,6 +36,7 @@ public class DesignPatternsApplication implements CommandLineRunner {
 		singletonRunner.run();
 		factoryPatternRunner.run();
 		abstractFactoryPatternRunner.run();
+		builderPatternRunner.run();
 	}
 	
 }
