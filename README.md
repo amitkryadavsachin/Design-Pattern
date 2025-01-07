@@ -197,3 +197,41 @@ Computer gamingPC = new ComputerBuilder()
 System.out.println("Gaming PC: " + gamingPC);
 
 
+# Prototype Design Pattern
+
+## What is the Prototype Design Pattern?
+
+The **Prototype Design Pattern** is a creational design pattern that allows you to create new objects by copying (cloning) existing ones. It avoids the need for creating new objects from scratch when it’s unnecessary or expensive.
+
+---
+
+## Key Concepts
+
+1. **Prototype Interface**: Defines a `clone()` method for duplicating objects.
+2. **Concrete Prototype**: Implements the `clone()` method to copy objects.
+3. **Client**: Uses the `clone()` method to create objects.
+
+---
+
+## When to Use
+
+1. To reduce the cost of creating new objects.
+2. When creating new objects involves a complex initialization process.
+3. To ensure all cloned objects are independent of the original.
+
+---
+
+## Code Example
+
+### Cloning a Circle
+
+```java
+Circle originalCircle = new Circle(10, "Red");
+Circle clonedCircle = (Circle) originalCircle.clone();
+clonedCircle.setColor("Blue");
+
+System.out.println("Original Circle: " + originalCircle);
+System.out.println("Cloned Circle: " + clonedCircle);
+
+
+
