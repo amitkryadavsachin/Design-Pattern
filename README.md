@@ -152,3 +152,48 @@ Promotes consistency among related objects.
 Increases flexibility and scalability.
 Makes the code easier to maintain and extend.
 
+# Builder Design Pattern
+
+## What is the Builder Design Pattern?
+
+The **Builder Design Pattern** is a creational design pattern that provides a way to construct complex objects step-by-step. It allows you to create different types and configurations of the same object without cluttering the constructor with numerous parameters.
+
+---
+
+## Key Components
+
+1. **Builder**: A separate class responsible for building the `Product`.
+2. **Product**: The complex object being built (e.g., `Computer`).
+3. **Director** (Optional): Orchestrates the building process.
+
+---
+
+## When to Use
+
+- When an object has multiple optional or configurable fields.
+- To avoid constructor overloading for various configurations of the object.
+
+---
+
+## Example
+
+Imagine constructing a **Computer** object with various configurations, such as a gaming PC and an office PC. The **Builder Pattern** makes it easy to create these objects step-by-step.
+
+---
+
+## Code Example
+
+### Creating a Gaming PC
+
+```java
+Computer gamingPC = new ComputerBuilder()
+    .setCpu("Intel Core i9")
+    .setRam("32GB")
+    .setStorage("1TB SSD")
+    .setGpu("NVIDIA RTX 3090")
+    .setOs("Windows 11")
+    .build();
+
+System.out.println("Gaming PC: " + gamingPC);
+
+
