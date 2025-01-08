@@ -185,7 +185,7 @@ Imagine constructing a **Computer** object with various configurations, such as 
 
 ### Creating a Gaming PC 
 
-java
+``java
 Computer gamingPC = new ComputerBuilder()
     .setCpu("Intel Core i9")
     .setRam("32GB")
@@ -225,7 +225,7 @@ The **Prototype Design Pattern** is a creational design pattern that allows you 
 
 ### Cloning a Circle
 
-```java
+``java
 Circle originalCircle = new Circle(10, "Red");
 Circle clonedCircle = (Circle) originalCircle.clone();
 clonedCircle.setColor("Blue");
@@ -233,5 +233,38 @@ clonedCircle.setColor("Blue");
 System.out.println("Original Circle: " + originalCircle);
 System.out.println("Cloned Circle: " + clonedCircle);
 
+
+# Object Pool Design Pattern
+
+## Overview
+
+The **Object Pool Design Pattern** is a creational design pattern used to manage a set of reusable objects. Instead of creating and destroying objects frequently, the pattern allows clients to borrow objects from a pre-initialized pool and return them when done.
+
+---
+
+## Key Features
+- **Singleton Connection Pool**: Ensures only one instance of the pool.
+- **Separate Queues**: Maintains `freeConnections` and `usedConnections` for better management.
+- **Thread Safety**: Synchronization ensures safe access in concurrent environments.
+
+---
+
+## Benefits
+1. **Improved Performance**: Reduces the overhead of frequent object creation and destruction.
+2. **Resource Optimization**: Ensures limited resources are efficiently reused.
+3. **State Management**: Tracks the state of each object (free or used).
+
+---
+
+## Code Example: Singleton Connection Pool
+
+### Connection Interface
+Defines the contract for connection objects.
+
+```java
+public interface Connection {
+    void connect();
+    void disconnect();
+}
 
 
