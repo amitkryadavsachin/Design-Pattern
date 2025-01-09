@@ -359,9 +359,9 @@ Client: Uses the target interface.
 Imagine an application using a legacy payment processor, but you want to integrate a third-party payment system. Instead of modifying the client code, you use an adapter to make the third-party payment system compatible with the existing codebase.
 
 ### Benefits of Adapter Pattern
--Enables integration of legacy or third-party systems.
--Promotes reusability without modifying existing code.
--Improves flexibility in system design.
+`` Enables integration of legacy or third-party systems.
+Promotes reusability without modifying existing code.
+Improves flexibility in system design.
 
 ### When to Use
 -When you need to integrate incompatible systems.
