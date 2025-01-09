@@ -7,6 +7,7 @@ import com.lld.design_patterns.creational.objectPool.ObjectPoolRunner;
 import com.lld.design_patterns.creational.prototype.PrototypePatternRunner;
 import com.lld.design_patterns.creational.prototype.expensive.PrototypeExpensiveRunner;
 import com.lld.design_patterns.creational.singleton.SingletonRunner;
+import com.lld.design_patterns.structural.adapter.AdapterRunner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,13 +22,16 @@ public class DesignPatternsApplication implements CommandLineRunner {
 	private final PrototypePatternRunner prototypePatternRunner;
 	private final PrototypeExpensiveRunner prototypeExpensiveRunner;
 	private final ObjectPoolRunner objectPoolRunner;
+	private final AdapterRunner adapterRunner;
+
 	public DesignPatternsApplication(SingletonRunner singletonRunner,
 									 FactoryPatternRunner factoryPatternRunner,
 									 AbstractFactoryPatternRunner abstractFactoryPatternRunner,
 									 BuilderPatternRunner builderPatternRunner,
 									 PrototypePatternRunner prototypePatternRunner,
 									 PrototypeExpensiveRunner prototypeExpensiveRunner,
-									 ObjectPoolRunner objectPoolRunner) {
+									 ObjectPoolRunner objectPoolRunner,
+									 AdapterRunner adapterRunner) {
 		this.singletonRunner = singletonRunner;
 		this.factoryPatternRunner = factoryPatternRunner;
 		this.abstractFactoryPatternRunner = abstractFactoryPatternRunner;
@@ -35,6 +39,7 @@ public class DesignPatternsApplication implements CommandLineRunner {
 		this.prototypePatternRunner = prototypePatternRunner;
 		this.prototypeExpensiveRunner = prototypeExpensiveRunner;
 		this.objectPoolRunner = objectPoolRunner;
+		this.adapterRunner = adapterRunner;
 	}
 
 	public static void main(String[] args) {
@@ -51,6 +56,7 @@ public class DesignPatternsApplication implements CommandLineRunner {
 		prototypePatternRunner.run();
 		prototypeExpensiveRunner.run();
 		objectPoolRunner.run();
+		adapterRunner.run();
 	}
 	
 }
