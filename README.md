@@ -261,10 +261,85 @@ The **Object Pool Design Pattern** is a creational design pattern used to manage
 ### Connection Interface
 Defines the contract for connection objects.
 
-```java
+``java
 public interface Connection {
     void connect();
     void disconnect();
 }
 
+
+
+#   
+
+
+
+# Structural Design Patterns
+
+Structural design patterns deal with how classes and objects are composed to form larger structures. These patterns focus on simplifying the design and ensuring better scalability, maintainability, and reusability.
+
+## Common Structural Patterns
+Adapter Pattern
+Bridge Pattern
+Composite Pattern
+Decorator Pattern
+Facade Pattern
+Flyweight Pattern
+Proxy Pattern
+
+
+### What are Structural Design Patterns?
+Structural design patterns focus on the composition of classes and objects to form larger structures. They help ensure that the resulting design is flexible and efficient. These patterns aim to simplify relationships between entities, whether through inheritance, composition, or delegation.
+
+### Advantages of Using Structural Patterns
+Improved Scalability: Easy to expand and modify systems.
+Enhanced Maintainability: Clear separation of concerns.
+Code Reusability: Reduces redundancy and enhances reusability.
+Better Performance: Optimizes resource usage, such as memory and processing.
+
+### Adapter Pattern
+Purpose: Converts the interface of one class into another that a client expects.
+Use Case: Integrating legacy systems with new systems.
+
+### Bridge Pattern
+Purpose: Decouples an abstraction from its implementation so that both can vary independently.
+Use Case: Separating device-specific code from generic business logic.
+
+### Composite Pattern
+Purpose: Composes objects into tree structures to represent part-whole hierarchies.
+Use Case: Representing a file system or organizational hierarchy.
+
+### Decorator Pattern
+Purpose: Adds responsibilities to an object dynamically without modifying its code.
+Use Case: Adding dynamic features to GUI components.
+
+### Facade Pattern
+Purpose: Provides a unified interface to a set of interfaces in a subsystem.
+Use Case: Simplifying complex subsystems for easier usage.
+
+### Flyweight Pattern
+Purpose: Reduces memory usage by sharing as much data as possible with similar objects.
+Use Case: Optimizing large numbers of fine-grained objects, like fonts or icons.
+
+### Proxy Pattern
+Purpose: Provides a surrogate or placeholder to control access to an object.
+Use Case: Access control, caching, or lazy initialization.
+
+###  Implementation Examples
+Each structural pattern has its implementation in a specific folder.
+
+Adapter Pattern: com.lld.design_patterns.structural.composite.adapter
+Bridge Pattern: com.lld.design_patterns.structural.composite.bridge
+Composite Pattern: com.lld.design_patterns.structural.composite.composite
+Decorator Pattern: com.lld.design_patterns.structural.composite.decorator
+Facade Pattern: com.lld.design_patterns.structural.composite.facade
+Flyweight Pattern: com.lld.design_patterns.structural.composite.flyweight
+Proxy Pattern: com.lld.design_patterns.structural.composite.proxy
+###  Use Cases
+Adapter Pattern: Connecting incompatible APIs or classes.
+Bridge Pattern: Separating UI rendering logic for desktop and mobile platforms.
+Composite Pattern: Representing a graphical UI layout with nested elements.
+Decorator Pattern: Dynamically adding scrollbars or borders to a UI widget.
+Facade Pattern: Simplifying file system interactions for applications.
+Flyweight Pattern: Rendering multiple instances of text in a document editor.
+Proxy Pattern: Implementing security for a resource or caching results from a database.
 
