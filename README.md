@@ -367,3 +367,27 @@ Imagine an application using a legacy payment processor, but you want to integra
 -When you need to integrate incompatible systems.
 -When you want to use an existing class but its interface does not match the required interface.
 
+
+# Composite Design Pattern
+## Overview
+The Composite Design Pattern is a structural design pattern that allows you to build complex tree structures by composing objects into hierarchical forms. It lets the client interact with individual objects and groups of objects in the same way.
+
+## Key Concepts
+Component: A common interface for all objects in the hierarchy.
+Leaf: Represents individual objects (e.g., files).
+Composite: Represents a group of objects (e.g., folders).
+Use Case
+Imagine a file system where:
+
+## Files are individual components.
+Folders are composite components that can contain files or other folders.
+The Composite Design Pattern allows you to interact with files and folders uniformly.
+
+## Benefits
+Simplifies code dealing with tree structures.
+Provides flexibility to add new components without changing existing code.
+Enables part-whole hierarchies to be represented transparently.
+## When to Use
+When working with hierarchical structures (e.g., file systems, organizational charts).
+When you want to treat individual objects and composites uniformly.
+
