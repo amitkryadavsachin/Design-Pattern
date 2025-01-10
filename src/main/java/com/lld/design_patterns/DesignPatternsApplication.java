@@ -8,6 +8,7 @@ import com.lld.design_patterns.creational.prototype.PrototypePatternRunner;
 import com.lld.design_patterns.creational.prototype.expensive.PrototypeExpensiveRunner;
 import com.lld.design_patterns.creational.singleton.SingletonRunner;
 import com.lld.design_patterns.structural.adapter.AdapterRunner;
+import com.lld.design_patterns.structural.composite.CompositeRunner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -23,6 +24,7 @@ public class DesignPatternsApplication implements CommandLineRunner {
 	private final PrototypeExpensiveRunner prototypeExpensiveRunner;
 	private final ObjectPoolRunner objectPoolRunner;
 	private final AdapterRunner adapterRunner;
+	private final CompositeRunner compositeRunner;
 
 	public DesignPatternsApplication(SingletonRunner singletonRunner,
 									 FactoryPatternRunner factoryPatternRunner,
@@ -31,7 +33,8 @@ public class DesignPatternsApplication implements CommandLineRunner {
 									 PrototypePatternRunner prototypePatternRunner,
 									 PrototypeExpensiveRunner prototypeExpensiveRunner,
 									 ObjectPoolRunner objectPoolRunner,
-									 AdapterRunner adapterRunner) {
+									 AdapterRunner adapterRunner,
+									 CompositeRunner compositeRunner) {
 		this.singletonRunner = singletonRunner;
 		this.factoryPatternRunner = factoryPatternRunner;
 		this.abstractFactoryPatternRunner = abstractFactoryPatternRunner;
@@ -40,6 +43,7 @@ public class DesignPatternsApplication implements CommandLineRunner {
 		this.prototypeExpensiveRunner = prototypeExpensiveRunner;
 		this.objectPoolRunner = objectPoolRunner;
 		this.adapterRunner = adapterRunner;
+		this.compositeRunner = compositeRunner;
 	}
 
 	public static void main(String[] args) {
@@ -57,6 +61,7 @@ public class DesignPatternsApplication implements CommandLineRunner {
 		prototypeExpensiveRunner.run();
 		objectPoolRunner.run();
 		adapterRunner.run();
+		compositeRunner.run();
 	}
 	
 }
