@@ -347,20 +347,20 @@ Proxy Pattern: Implementing security for a resource or caching results from a da
 
 # Adapter Design Pattern
 ### Overview
-The Adapter Pattern is a structural design pattern used to make incompatible interfaces work together. It acts as a bridge between two different interfaces by wrapping an existing class with a new interface.
+The Adapter Pattern is a structural design pattern used to make incompatible interfaces work together. It acts as a bridge between two different interfaces by wrapping an existing class   with a new interface.  
 
 ### Components
--Target Interface: The interface expected by the client.
--Adapter Class: Converts the adaptee interface into the target interface.
--Adaptee Class: The existing interface that needs to be adapted.
--Client: Uses the target interface.
+-Target Interface: The interface expected by the client.  
+-Adapter Class: Converts the adaptee interface into the target interface.  
+-Adaptee Class: The existing interface that needs to be adapted.  
+-Client: Uses the target interface.  
 
 ### Use Case
 Imagine an application using a legacy payment processor, but you want to integrate a third-party payment system. Instead of modifying the client code, you use an adapter to make the third-party payment system compatible with the existing codebase.
 
 ### Benefits of Adapter Pattern
--Enables integration of legacy or third-party systems.
--Promotes reusability without modifying existing code.
+-Enables integration of legacy or third-party systems.  
+-Promotes reusability without modifying existing code.  
 -Improves flexibility in system design.
 
 ### When to Use
@@ -370,24 +370,24 @@ Imagine an application using a legacy payment processor, but you want to integra
 
 # Composite Design Pattern
 ## Overview
-The Composite Design Pattern is a structural design pattern that allows you to build complex tree structures by composing objects into hierarchical forms. It lets the client interact with individual objects and groups of objects in the same way.
+- The Composite Design Pattern is a structural design pattern that allows you to build complex tree structures by composing objects into hierarchical forms. It lets the client interact - with individual objects and groups of objects in the same way.
 
 ## Key Concepts
-Component: A common interface for all objects in the hierarchy.
-Leaf: Represents individual objects (e.g., files).
-Composite: Represents a group of objects (e.g., folders).
-Use Case
-Imagine a file system where:
+- Component: A common interface for all objects in the hierarchy.
+-  Represents individual objects (e.g., files).
+- Composite: Represents a group of objects (e.g., folders).
+- Use Case
+- Imagine a file system where:
 
 ## Files are individual components.
-Folders are composite components that can contain files or other folders.
-The Composite Design Pattern allows you to interact with files and folders uniformly.
+- Folders are composite components that can contain files or other folders.  
+- The Composite Design Pattern allows you to interact with files and folders uniformly.  
 
-## Benefits
-Simplifies code dealing with tree structures.
-Provides flexibility to add new components without changing existing code.
-Enables part-whole hierarchies to be represented transparently.
+## Benefits 
+- Simplifies code dealing with tree structures.  
+- Provides flexibility to add new components without changing existing code.  
+- Enables part-whole hierarchies to be represented transparently.  
 ## When to Use
-When working with hierarchical structures (e.g., file systems, organizational charts).
-When you want to treat individual objects and composites uniformly.
+- When working with hierarchical structures (e.g., file systems, organizational charts).  
+- When you want to treat individual objects and composites uniformly.  
 
