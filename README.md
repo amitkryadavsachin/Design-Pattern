@@ -343,3 +343,27 @@ Facade Pattern: Simplifying file system interactions for applications.
 Flyweight Pattern: Rendering multiple instances of text in a document editor.
 Proxy Pattern: Implementing security for a resource or caching results from a database.
 
+
+
+# Adapter Design Pattern
+### Overview
+The Adapter Pattern is a structural design pattern used to make incompatible interfaces work together. It acts as a bridge between two different interfaces by wrapping an existing class with a new interface.
+
+### Components
+-Target Interface: The interface expected by the client.
+-Adapter Class: Converts the adaptee interface into the target interface.
+-Adaptee Class: The existing interface that needs to be adapted.
+-Client: Uses the target interface.
+
+### Use Case
+Imagine an application using a legacy payment processor, but you want to integrate a third-party payment system. Instead of modifying the client code, you use an adapter to make the third-party payment system compatible with the existing codebase.
+
+### Benefits of Adapter Pattern
+-Enables integration of legacy or third-party systems.
+-Promotes reusability without modifying existing code.
+-Improves flexibility in system design.
+
+### When to Use
+-When you need to integrate incompatible systems.
+-When you want to use an existing class but its interface does not match the required interface.
+
